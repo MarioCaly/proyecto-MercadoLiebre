@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;;
+}
+/*-----------------HEADER-------------------*/
+header{
+    background-color: #FFFF00;
+}
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.logo{
+    width: 10rem;
+    max-width: 12rem;
+    
+}
+.barra-de-busqueda{
+    display: flex;
+    width: 40%;
+    
+}
+.tamaño-barra{
+    border-radius: 5px;
+    width: 90%;
+    max-width: 350px;
+}
+.conteiner-copy-header{
+    display: flex;
+    
+}
+a{
+
+    text-decoration: none;
+    color: black;
+}
+.main-header{
+    background-color: yellow;
+    padding: 20px;
+    display: block;
+    
+}
+
+.copy-header{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+}
+
+.main-header-navbar {
+    display: none;
+    justify-content: space-around;
+}
+
+.main-header-navbar li{
+    list-style: none;
+    text-decoration: none;
+
+}
+/*------------------------Main----------------------------*/
+.hamburguer-button{
+    display: block;
+    text-align: center;
+    background-color:#0044AA;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    max-width: 40px;
+    margin: auto;
+    border-radius: 8px;
+}
+.conteiner-login{
+    background-color:#EBEBEB ;
+    text-align: center;
+    padding: 30px;
+    
+}
+.conteiner-login section{
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.conteiner-login input{
+    padding: 5px;
+    color: #E2E2E2;
+    
+
+}
+.conteiner-login section{
+    padding: 10px;
+}
+.button-enviar{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 190px;
+    background-color: blue;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    margin: auto;
+    border-radius: 8px;
+}
+.button-enviar:hover{
+    background-color: #0022AA;
+    transition-duration: 0,5s;
+}
+
+/*-------------------FOOTER---------------------*/
+footer{
+    display: block;
+    flex-direction: column;
+    
+    }
+    footer i{
+        width: 2em;
+        padding-bottom: 10px;
+        color: blue;
+    }
+    footer div{
+    text-align: center;
+    margin: 10px;
+    }
+    .bottom-footer{
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+    }
+    @media (min-width: 381px){
+        .barra-busqueda{
+            size: auto;
+        }
+            .main-header-navbar {
+                display: none;
+                padding-top: 10px;
+                text-align: center;
+                justify-content: space-around;
+            }
+        
+            a{
+                font-size: 14px;
+            }
+            .main-header-navbar ul{
+                display: flex;
+                justify-content: space-around; 
+                }
+                
+                .main-header-navbar li{
+                    padding: 0 5px;
+                }
+                /*Main-productos*/
+                .main-productos{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                }
+                .conteiner-login section{
+                    display: flex;
+                    text-align: right;
+                    width: 90%;
+                    justify-content: right;
+                }
+            }
+            
+            
+        @media(min-width: 769px)  {
+        .hamburguer-button{
+            display: none;
+            }
+        .main-header-top-bar{
+            display:flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            }
+        .barra-de-busqueda{
+            display: flex;
+                font-size: 18px;
+                justify-items: center;
+            }
+        
+        .conteiner-copy-header{
+            display: flex;
+        }
+            .copy-header{
+                font-size: 15px;
+                text-align: none;
+            }
+            .conteiner-copy-header{
+                display: flex;
+            }
+        
+            
+            .main-header-navbar {
+                display: flex;
+                justify-content: space-between;
+            }
+        
+            .main-header-navbar ul{
+                display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+            .hamburguer-button{
+                display: none;
+            }
+            /*main */
+            .conteiner-productos{
+                width: 20%;
+            }
+            .conteiner-login section{
+                display: flex;
+                text-align: right;
+                width: 70%;
+                justify-content: right;
+            }
+            /*-----------------footer----------------------*/
+            footer{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            footer div{
+                margin: 10px auto;
+                width: 30%;
+        
+            
+            }
+        }
+        @media (min-width:1200px) {
+        
+            header{
+                max-width: 1200px;
+                justify-content: space-around;
+                margin: auto;
+            }
+            .logo img{
+                width: 150px;
+                max-width: none;
+                margin: 0;
+            }
+            .copy-header{
+                max-width: none;
+                font-size: 18px;
+                font-weight: 400;
+                margin: 0;
+        
+            }
+            .main-header-top-bar{
+                margin-bottom: 20px;
+            }
+        .conteiner-productos{
+            width: 20%;
+        }
+
+        .conteiner-login section{
+            display: flex;
+            text-align: right;
+            width: 57%;
+            justify-content: right;
+        }
+            footer div{
+                width: 30%;
+            }
+    }
+
+
+    

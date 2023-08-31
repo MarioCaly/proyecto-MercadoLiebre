@@ -1,0 +1,476 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;;
+}
+/*-----------------HEADER-------------------*/
+header{
+    background-color: #FFFF00;
+}
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.logo{
+    width: 10rem;
+    max-width: 12rem;
+    
+}
+.barra-de-busqueda{
+    display: flex;
+    width: 40%;
+    
+}
+.tamaño-barra{
+    border-radius: 5px;
+    width: 90%;
+    max-width: 350px;
+}
+.conteiner-copy-header{
+    display: flex;
+    
+}
+a{
+
+    text-decoration: none;
+    color: black;
+}
+.main-header{
+    background-color: yellow;
+    padding: 20px;
+    display: block;
+    
+}
+
+.copy-header{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+}
+
+.main-header-navbar {
+    display: none;
+    justify-content: space-around;
+}
+
+.main-header-navbar li{
+    list-style: none;
+    text-decoration: none;
+
+}
+
+/*----------------MAIN---------------------*/
+
+.backgroud-main{
+    background-color: #666;
+}
+.hamburguer-button{
+    display: block;
+    text-align: center;
+    background-color:#0044AA;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    max-width: 40px;
+    margin: auto;
+    border-radius: 8px;
+}
+main{
+    background-color: #EBEBEB;
+}
+.titulos-main{
+    padding: 5px;
+}
+.titulosa-main h3{
+    font-weight: 400;
+    font-size: 24px;
+}
+.texto-producto-titulo a {
+    position: relative;
+    z-index:2;
+    transition:2s;
+    }
+    .texto-producto-precio{
+        font-size: 18px;  
+
+    }
+    
+    .texto-producto-descuento{
+        font-size: 16px;
+
+    }
+
+.descripcion-producto{
+    height:40px;
+    transition: 2s;
+    
+}
+.texto-producto-precio{
+    padding-top: 10px;
+font-size: 15px;
+}
+.texto-producto-descuento{
+    padding-top: 10px;
+font-size:15px;
+}
+
+.main-productos{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+
+}
+.main-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.conteiner-productos{
+    width: 90%;
+
+}
+main .conteiner-productos{
+    margin: 10px;
+    padding: 15px;
+}
+/*------transiciones-------*/
+.conteiner-productos:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition-duration: 0,5s;
+    
+}
+.conteiner-productos:hover .descripcion-producto {
+    transition-duration: 3s;
+    z-index: 3;
+}
+.conteiner-productos:hover .conteiner-titulo a{
+    display: block;
+    font-weight: 400;
+    color: black;
+    transition-duration: 2s;
+}
+img{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+
+}
+.bottom-envio{
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #3fb251;
+    max-width: 40px;
+    border-radius: 60px ;
+}
+.descripcion-producto{
+    background-color: white;
+    border-top: #ebebeb;
+    margin-top:1px;
+    margin: auto;
+    text-align: left;
+height: 60px;
+}
+.descripcion-producto > .bottom-envio {
+display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+}
+.descripcion-producto{
+    position: relative;
+
+    }
+
+.bottom-envio:hover{
+    transform: rotate(-90deg);
+    transition-duration: 1s;
+}
+
+.copy-descripcion{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 5px 10px;
+}
+.texto-producto-precio{
+width:50%;
+}
+.texto-producto-descuento{
+    width: 20%;
+    padding: 0 30px;
+}
+.texto-producto-titulo{
+    font-size: 14px;
+    position:relative;
+    z-index:-2;
+    opacity: 0;
+    transition: all 2s;
+    padding: 0 5px;
+}
+.conteiner-productos:hover .descripcion-producto{
+    height: 70px;
+
+}
+.conteiner-productos:hover .texto-producto-titulo{
+    z-index: 2;
+    opacity: 1;
+    bottom: 5px;
+}
+
+
+
+/*-------------------FOOTER---------------------*/
+footer{
+display: block;
+flex-direction: column;
+
+}
+footer i{
+    width: 2em;
+    padding-bottom: 10px;
+    color: blue;
+}
+footer div{
+text-align: center;
+margin: 10px;
+}
+.bottom-footer{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+/*tablet*/
+@media (min-width: 381px){
+.barra-busqueda{
+    size: auto;
+}
+    .main-header-navbar {
+        display: none;
+        padding-top: 10px;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    a{
+        font-size: 14px;
+    }
+    .main-header-navbar ul{
+        display: flex;
+        justify-content: space-around; 
+        }
+        
+        .main-header-navbar li{
+            padding: 0 5px;
+        }
+        /*Main-productos*/
+        .main-productos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .conteiner-productos{
+            width: 40%;
+        }
+        .descripcion-producto{
+            height: 75px;
+        }
+        .texto-producto-precio{
+            padding-top: 10px;
+        font-size: 15px;
+        }
+        .texto-producto-descuento{
+            padding-top: 10px;
+        font-size: 15px;
+        }
+        .texto-producto-titulo{
+            font-size: 12px;
+        }
+/*-------------transiciones----------------------*/
+        .conteiner-productos:hover .descripcion-producto{
+            height: 100px;
+        
+        }
+        .conteiner-productos:hover .texto-producto-titulo{
+            opacity: 1;
+            top:5px;
+            font-size: 14px;
+        }
+        
+    }
+
+    
+    
+@media(min-width: 769px)  {
+.hamburguer-button{
+    display: none;
+    }
+.main-header-top-bar{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    }
+.barra-de-busqueda{
+    display: flex;
+        font-size: 18px;
+        justify-items: center;
+    }
+
+.conteiner-copy-header{
+    display: flex;
+}
+    .copy-header{
+        font-size: 15px;
+        text-align: none;
+    }
+    .conteiner-copy-header{
+        display: flex;
+    }
+
+    
+    .main-header-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-header-navbar ul{
+        display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    .hamburguer-button{
+        display: none;
+    }
+    /*main */
+    .descripcion-producto{
+        height: 75px;
+    }
+    .conteiner-productos{
+        width: 20%;
+    }
+    .texto-producto-titulo{
+        font-size: 13px;
+    }
+    .texto-producto-precio{
+        width:40%;
+        }
+        .texto-producto-descuento{
+            width: 10%;
+        }
+        .texto-producto-descuento{
+        width: 20%;
+        }
+        .texto-producto-precio{
+        padding-top: 10px;
+        font-size: 15px;
+        }
+        .texto-producto-descuento{
+        padding-top: 10px;
+        font-size: 15px;
+        }
+        .texto-producto-titulo{
+            font-size: 12px;
+        }
+
+    .conteiner-productos:hover .descripcion-producto{
+        height: 85px;
+    
+    }
+    .conteiner-productos:hover .texto-producto-titulo{
+        opacity: 1;
+        top: 1px;
+}
+}
+    /*-----------------footer----------------------*/
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    footer div{
+        margin: 10px auto;
+        width: 30%;
+
+    
+    }
+@media (min-width:1200px) {
+
+    header{
+        max-width: 1200px;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .logo img{
+        width: 150px;
+        max-width: none;
+        margin: 0;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+
+    }
+    .main-header-top-bar{
+        margin-bottom: 20px;
+    }
+.conteiner-productos{
+    width: 20%;
+}
+
+.texto-producto-titulo{
+    font-size: 13px;
+}
+.texto-producto-precio{
+    width:50%;
+    }
+    .texto-producto-descuento{
+        width: 10%;
+    }
+    .texto-producto-descuento{
+    width: 20%;
+    }
+    .texto-producto-precio{
+    padding-top: 10px;
+    font-size: 18px;
+    }
+    .texto-producto-descuento{
+    padding-top: 10px;
+    font-size: 18px;
+    }
+    .texto-producto-titulo{
+        font-size: 12px;
+    }
+
+.conteiner-productos:hover .descripcion-producto{
+    height: 85px;
+
+}
+.conteiner-productos:hover .texto-producto-titulo{
+    opacity: 1;
+    top: 1px;
+    font-size: 18px;
+}
+    footer div{
+        width: 30%;
+    }
+}
